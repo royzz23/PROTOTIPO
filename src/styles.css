@@ -52,7 +52,7 @@ input {
   margin-bottom: 8px;
 }
 
-.login-card p {
+.login-subtext {
   color: #666;
   margin-bottom: 18px;
 }
@@ -68,6 +68,12 @@ input {
   border-radius: 14px;
   padding: 14px;
   background: #fafafa;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: #ef233c;
+  box-shadow: 0 0 0 3px rgba(239, 35, 60, 0.08);
 }
 
 .login-form button {
@@ -76,6 +82,16 @@ input {
   border-radius: 14px;
   padding: 14px;
   font-weight: 700;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.login-form button:hover {
+  transform: translateY(-1px);
+}
+
+.login-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .credentials {
@@ -88,7 +104,41 @@ input {
 
 .error {
   color: #c1121f;
-  margin-top: 10px;
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.success-message {
+  color: #1f8f3a;
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.switch-box {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.switch-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.switch-btn {
+  background: transparent;
+  color: #c1121f;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 4px 8px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.switch-btn:hover {
+  color: #ef233c;
+  transform: scale(1.04);
 }
 
 /* APP */
@@ -343,6 +393,14 @@ input {
   font-weight: 800;
   font-size: 24px;
   margin-bottom: 4px;
+}
+
+.product-old-price {
+  text-decoration: line-through;
+  opacity: 0.7;
+  margin-top: -4px;
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
 .product-info h3 {
@@ -639,4 +697,39 @@ input {
   .product-info h3 {
     font-size: 14px;
   }
+}
+
+.google-login-box {
+  margin-top: 18px;
+}
+
+.google-divider {
+  text-align: center;
+  margin: 14px 0;
+  position: relative;
+}
+
+.google-divider span {
+  background: #fff;
+  padding: 0 10px;
+  color: #777;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.google-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #e5e5e5;
+}
+
+.google-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 44px;
 }
