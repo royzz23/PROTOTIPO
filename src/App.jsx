@@ -6,7 +6,7 @@ import {
   useState
 } from 'react'
 
-const API_URL = 'http://localhost:3001'
+const API_URL = 'https://prototipo-production-7c5f.up.railway.app'
 const ALL_CATEGORY = 'Todos'
 
 const CATEGORY_THEME = {
