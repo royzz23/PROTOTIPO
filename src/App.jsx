@@ -180,47 +180,7 @@ function Login({ onLogin }) {
   return (
     <div className="login-page">
       <div className="login-layout">
-        <section className="login-aside">
-          <span className="eyebrow">Kiosko digital</span>
-          <h1>Una vitrina mas clara, rapida y lista para vender.</h1>
-          <p className="login-lead">
-            Organiza productos, encuentra categorias rapido y deja el carrito a
-            un toque de distancia.
-          </p>
 
-          <div className="login-highlight-grid">
-            <article className="highlight-card">
-              <span className="highlight-icon">{'\u{1F525}'}</span>
-              <div>
-                <h3>Compra sin friccion</h3>
-                <p>Busqueda central, filtros utiles y carrito visible.</p>
-              </div>
-            </article>
-
-            <article className="highlight-card">
-              <span className="highlight-icon">{'\u{1F4B3}'}</span>
-              <div>
-                <h3>Acceso directo</h3>
-                <p>Entra con correo o con tu cuenta de Google.</p>
-              </div>
-            </article>
-          </div>
-
-          <div className="login-metrics">
-            <div>
-              <strong>+6</strong>
-              <span>zonas listas para catalogo</span>
-            </div>
-            <div>
-              <strong>24/7</strong>
-              <span>tu tienda disponible</span>
-            </div>
-            <div>
-              <strong>1 toque</strong>
-              <span>para agregar al carrito</span>
-            </div>
-          </div>
-        </section>
 
         <section className="login-card">
           <div className="login-logo">

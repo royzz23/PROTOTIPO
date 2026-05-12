@@ -197,10 +197,14 @@ select:focus-visible {
 }
 
 .login-layout {
-  width: min(1180px, 100%);
-  display: grid;
-  grid-template-columns: 1.12fr 0.88fr;
-  gap: 24px;
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
 }
 
 .login-aside,
@@ -1202,6 +1206,7 @@ select:focus-visible {
 }
 
 @keyframes floatCard {
+
   0%,
   100% {
     transform: translateY(0);
@@ -1371,6 +1376,7 @@ select:focus-visible {
 }
 
 @media (max-width: 560px) {
+
   .hero-copy h1,
   .login-aside h1,
   .login-card h2,
