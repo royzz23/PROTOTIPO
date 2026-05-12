@@ -17,14 +17,18 @@ app.use(express.json())
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID)
 
 // 🔌 CONEXIÓN MYSQL
-const db = mysql.createConnection({
-    host: 'localhost',
+const db = mysql.createPool({
+    host: 'viaduct.proxy.rlwy.net',
     user: 'root',
-    password: '',
-    database: 'tiendita'
+    password: 'lbzLUkRiLoGoxVhjxfHWZRYubAcoAMhB',
+    database: 'railway',
+    port: 27640,
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
 })
 
-db.connect((err) => {
+db.query('SELECT 1', (err) => {
     if (err) {
         console.error('Error de conexión:', err)
     } else {
